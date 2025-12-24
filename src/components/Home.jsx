@@ -1,5 +1,6 @@
 import PageHeading from "./PageHeading";
 import ProductListings from "./ProductListings";
+import products from "../data/products";
 
 export default function Home() {
     return (
@@ -10,7 +11,7 @@ export default function Home() {
                     radiant beauty and lasting results.
                 </p>
             </PageHeading>
-            <ProductListings />
+            <ProductListings products={products} />
         </div>
     );
 }

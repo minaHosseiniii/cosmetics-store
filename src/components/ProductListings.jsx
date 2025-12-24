@@ -4,8 +4,8 @@ export default function ProductListings({products}) {
     return (
         <div className="product-listings-container">
             <div className="product-listings-grid">
-                {products.length > 0 ? (
-                        products.map((product) => (
+                {products?.length > 0 ? (
+                        products?.map((product) => (
                             <ProductCard key={product.productId} product={product}/>
                         )))
                     : (
